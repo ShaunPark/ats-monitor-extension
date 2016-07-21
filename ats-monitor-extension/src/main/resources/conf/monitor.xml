@@ -18,7 +18,7 @@
             <argument name="location" is-required="true" default-value="_stats"/>
 
             <!-- Optional Properties  -->
-            <!--<argument name="metric-prefix" is-required="false" default-value="Custom Metrics|CacheServer|ATS"/>-->
+            <!--<argument name="metric-prefix" is-required="false" default-value="Custom Metrics|CacheServer|ATS"/> -->
 
         </task-arguments>
         <java-task>
