@@ -41,7 +41,7 @@ import com.singularity.ee.agent.systemagent.api.exception.TaskExecutionException
  * NGinXStatusMonitor is a class that provides metrics on NGinX server by using the
  * NGinX status stub.
  */
-public class ATSMonitor extends AManagedMonitor {
+public class ATSMonitor extends AManagedMonitor  {
     /**
      * The metric can be found in Application Infrastructure Performance|{@literal <}Node{@literal >}|Custom Metrics|WebServer|NGinX|Status
      */
