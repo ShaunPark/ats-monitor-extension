@@ -38,12 +38,12 @@ import com.singularity.ee.agent.systemagent.api.TaskExecutionContext;
 import com.singularity.ee.agent.systemagent.api.TaskOutput;
 import com.singularity.ee.agent.systemagent.api.exception.TaskExecutionException;
 /**
- * NGinXStatusMonitor is a class that provides metrics on NGinX server by using the
- * NGinX status stub.
+ * ATSMonitor is a class that provides metrics on Apache Traffic server by using the
+ * ATSMonitor status stub.
  */
 public class ATSMonitor extends AManagedMonitor  {
     /**
-     * The metric can be found in Application Infrastructure Performance|{@literal <}Node{@literal >}|Custom Metrics|WebServer|NGinX|Status
+     * The metric can be found in Application Infrastructure Performance|{@literal <}Node{@literal >}|Custom Metrics|CacheServer|ATS
      */
     private static final Logger logger = Logger.getLogger(ATSMonitor.class);
 
