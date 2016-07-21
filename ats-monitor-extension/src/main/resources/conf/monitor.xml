@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monitor>
+    <name>ATSMonitor</name>
+    <type>managed</type>
+    <description>ATS server monitor</description>
+    <monitor-configuration></monitor-configuration>
+    <monitor-run-task>
+        <execution-style>periodic</execution-style>
+        <execution-frequency-in-seconds>60</execution-frequency-in-seconds>
+        <name>ATS Monitor Run Task</name>
+        <display-name>ATS Monitor Task</display-name>
+        <description>ATS Monitor Task</description>
+        <type>java</type>
+        <execution-timeout-in-secs>60</execution-timeout-in-secs>
+        <task-arguments>
+            <argument name="host" is-required="true" default-value="localhost"/>
+            <argument name="port" is-required="true" default-value="8080"/>
+            <argument name="location" is-required="true" default-value="_stats"/>
+
+            <!-- Optional Properties  -->
+            <!--<argument name="metric-prefix" is-required="false" default-value="Custom Metrics|WebServer|NGinX"/>-->
+
+        </task-arguments>
+        <java-task>
+            <classpath>ats-monitoring-extension.jar</classpath>
+            <impl-class>kr.co.solulink.appdynamics.extension.ATSMonitor</impl-class>
+        </java-task>
+    </monitor-run-task>
+</monitor>
